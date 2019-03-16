@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>仿百度云拖拽自动上传</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="lib/iconfont/iconfont.css">
+	<script src="lib/jquery-3.3.1.js"></script>
+	<script src="lib/spark-md5.min.js"></script>
+	<script src="lib/fine-uploader.core.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    
+
+    
+    <div id="picker">选择文件</div>
+    <button id="ctlBtn" class="btn btn-default">开始上传</button>
+
+
+    
+	<div id="upload_info">
+
+		<div class="head">
+			<h3>正在上传(<span></span>)</h3>
+			<div class="btns">
+				<a href="javascript:;" class="ema"><i class="iconfont">&#xeb36;</i></a>
+				<a href="javascript:;" class="clo"><i class="iconfont">&#xeb2c;</i></a>
+			</div>
+		</div>
+		<p class="ul">
+			<span>文件(夹) 名</span>
+			<span>大小</span>
+			<span>上传目录</span>
+			<span>状态</span>
+		</p>
+		<p class="tip"><span></span><a href="javascript:;"><i class="iconfont">&#xeb2c;</i></a></p>
+		<div class="con_wrap">
+			<div class="con clearfix">
+			</div>
+		</div>
+
+	</div>
+	<div class="drop_shade"><p>上传文件到当前目录下</p></div>
+	<p id="md5_file"></p>
+
+
+</body>
+</html>
